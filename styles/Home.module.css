@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-color:#222;
 }
 
 .main {
@@ -42,7 +43,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
@@ -54,6 +55,10 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.clearfix{
+  clear:both;
 }
 
 .code {
@@ -73,17 +78,182 @@
   max-width: 800px;
 }
 
-.card {
+.gridSearch {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(48, 45, 45);
+}
+
+.block {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  padding: 1.5rem;
+}
+
+.block >icesi {
+  width: 500px;
+  display: flex;
+  align-items: left;
+}
+
+.block >searchbar {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block >profile {
+  width: 500px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.diva1{
+  position:absolute;
+  left:50px;
+  width:110px;
+  height:500px;
+  border:2.5px solid black;
+  border-radius:100px;
+  background:rgb(51, 47, 47);
+  align-content: vertical;
+  padding: 10px;
+}
+
+.diva1 >gear {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btplacer{
+  max-width: 300px;
+  height: 50px;
+}
+
+.bt{
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
+  border: 1px;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 1000px;
+}
+
+.bt2{
+  position:absolute;
+  top:0px;
+  background:dimgrey;
+  width:75px;
+  color:black;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  display:flex;
+}
+
+.bt3{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:90px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+
+
+
+.calendar{
+  border:solid 5px #777;
+  width: 800px;
+  height:600px;
+}
+
+.card {
+  width: "1000";
+  height:"1000";
+  margin: 1rem;
+  padding: 1.5rem;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
+
+#container{
+  width:100%;
+  height: 80%;
+  padding: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 1000px;
+}
+
+.section >icon {
+  align-items: left;
+  margin-left:auto;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 1px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
 
 .card:hover,
 .card:focus,
